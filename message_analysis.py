@@ -14,3 +14,10 @@ print('每句留言的平均長度為 : ', avg)
 #	sum_len += len(d)
 #avg = sum_len / len(data)
 #print('留言的平均長度為 : ', avg)
+
+#計算留言長度小於100的數量
+m100 = []
+for d in data:
+	if len(d) < 100:
+		m100.append(d)
+print('長度小於100的留言有', len(m100), '則')
